@@ -21,9 +21,30 @@ public class Arrays {
 
 
 //        //method 4 for array declaration
-        int [] marks2 = {10,40,60,20};
-        System.out.println(marks2.length);
+        // int [] marks2 = {10,40,60,20};
+        // System.out.println(marks2.length);
 
+
+
+
+        // print an array 
+        // int [] arr = {1,2,3,4,5,6};
+        // for(int i=0;i<arr.length;i++)
+        //    System.out.print(arr[i]+" ");
+
+
+
+        // take user input in array
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of array:");
+        int size=sc.nextInt();
+        int[] arr = new int[size];
+        System.out.println("Enter elements of array:");
+        for(int i=0;i<size;i++)
+            arr[i]=sc.nextInt();
+        System.out.println("Elements of array :");
+        for(int i=0;i<size;i++)
+            System.out.print(arr[i]+" ");
 
     }
 }
