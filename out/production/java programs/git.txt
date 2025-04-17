@@ -1,0 +1,19 @@
+git init 
+git add .
+git commit -m "hello  // nhi hogaa tell to vs code who are uuu
+
+
+again   =>> git commit -m " java"
+
+link add git remote add origin master url 
+
+git push
+
+
+
+updateddd code 
+
+
+git add .
+git commit -m "msg"
+git push
