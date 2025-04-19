@@ -4,7 +4,7 @@ class Base{
 
     // default constructor
     Base(){
-        System.out.println("I am a base class constructor");
+        System.out.println("I am a base class default constructor");
     }
     // parameterized constructor
     Base(int x){
@@ -24,12 +24,12 @@ class Derived extends Base{
     // default constructor 
     Derived(){
         super(0);     // it called parameterized constructor of base class with 0 value otherwise it called default constructor of base class
-        System.out.println("I am a derived class constructor");
+        System.out.println("I am a derived class default constructor");
     }
     // it called base class parameterized constructor
     Derived(int x,int y){
         super(x);
-        System.out.println("I am an overloaded constructor of derived with value of x and y as :"+y);
+        System.out.println("I am an overloaded constructor of derived with value of y as :"+y);
     }
     public int getY(){
         return y;

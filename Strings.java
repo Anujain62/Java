@@ -20,11 +20,11 @@ public class Strings {
 //        System.out.println(str.charAt(1));     //it gives char at given index
 //        System.out.println(str.indexOf("n"));      //it returns the value of index where char is first time find(starting index of char)
 //        System.out.println(str.indexOf("n",3)); //it return the value of index,it checks char after the given index
-//        System.out.println(str.lastIndexOf("a"));    //returns the last index of the given char(string)
+       System.out.println(str.lastIndexOf("a"));    //returns the last index of the given char(string)
 //        System.out.println(str.lastIndexOf("a",3));   //returns the last index of the given string (char) before the given string
 //        System.out.println(str.equals("naman"));   //return true/false after checking given string is equal to user input string
 //        System.out.println(str.equalsIgnoreCase("naMan"));  //returns true/false after comparing both string and it is ignore the case of character
-        System.out.println("i am escape sequence \" double quote");
+        // System.out.println("i am escape sequence \" double quote");
 
     }
 }

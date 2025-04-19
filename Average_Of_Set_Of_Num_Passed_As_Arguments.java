@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class Average_Of_Set_Of_Num_Passed_As_Arguments {
-    static int average(int []arr){
+    static float average(int []arr){
         int n=arr.length;
         int sum=0;
         for(int i=0;i<n;i++)
             sum+=arr[i];
-        return  sum/n;
+        return  sum/(float)n;
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

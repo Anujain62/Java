@@ -27,7 +27,7 @@ public class Dynamic_Method_Dispatch {
         obj1.name();  //if function is not override so this conditon base class function is called,does not called function of derived class,this is called dynamic dispatch ,
         obj1.greet();   //if function is override, so this condition called derived class function because here actually object is created derived class
        
-        // obj1.hello();  // Not allwed,this is called dynamic dispatch
+        //obj1.hello();  // Not allwed,this is called dynamic dispatch
 
         // Two obj2=new One();    // this is invalis(not allowed),because reference of sub-class is not equal to object of supar-class 
 

@@ -1,4 +1,4 @@
-// we can inherit ont one interface to another interface , not in class
+// we can inherit one interface to another interface , not in class
 
 interface sampleInterface{
  void meth1();

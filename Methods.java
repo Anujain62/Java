@@ -11,7 +11,7 @@ public class Methods {
 
 
     //normal function will called using object
-    static int logic(int x,int y){
+     int logic(int x,int y){
                int z;
                if(x>y)
                    z=x+y;
@@ -29,6 +29,7 @@ public class Methods {
 //        int c1=logic(a1,b1);
 //        System.out.println(c);
 //        System.out.println(c1);
+
 
         // normal function method
         int a=5;
