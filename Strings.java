@@ -31,7 +31,7 @@ public class Strings {
 
 //        System.out.println(str.charAt(1));     //it gives char at given index
 
-//        System.out.println(str.indexOf("n"));      //it returns the value of index where char is first time find(starting index of char)
+//        System.out.println(str.indexOf("n"));      //it returns the value of index where char is first time find(starting index of char),if char is not present so it returns -1
 
 //        System.out.println(str.indexOf("n",3)); //it return the value of index,it checks char after the given index
 
@@ -44,6 +44,36 @@ public class Strings {
 //        System.out.println(str.equalsIgnoreCase("naMan"));  //returns true/false after comparing both string and it is ignore the case of character
 
 //        System.out.println("i am escape sequence \" double quote");
+
+
+
+    //    String str1="hello";
+    //    String str2="hello";
+    //    // it gives true because both strings contains same strings so it points same address
+    //    System.out.println(str1==str2);
+
+    //    String str1="hello";
+    //    String str2=str1+"";
+    //    // if we perform any arithmetic operation so it creates new object or memory for new variable so it points different address
+    //    System.out.println(str1==str2);
+
+
+    // str1==str2  -> it checks only address
+    // str1.equals(str2)  -> it checks values
+
+
+    // String str1="hello";
+    // String str2=str1;
+    // // it gives true because it points same address
+    // System.out.println(str1==str2);
+
+
+    // String str1=new String("hello");
+    // String str2=new String("hello");
+    // // it gives false because it creates new memory
+    // System.out.println(str1==str2);
+
+
 
     }
 }

@@ -47,8 +47,7 @@ class Library{
 
     public void IssueBook(){
         System.out.println("Enter your name :");
-        name[nameList]=sc.nextLine();
-        nameList++;
+        name[ nameList++]=sc.nextLine();
         System.out.println("Total books :"+TotalBook());
         System.out.println("List of Books:");
         listOfBook();
