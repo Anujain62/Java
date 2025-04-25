@@ -1,6 +1,6 @@
 public class Strings {
     public static void main(String[] args) {
-        String str = "naman";
+        //   String str = "naman";
 //        System.out.println(str);
 
 //        int value = str.length();
@@ -74,6 +74,7 @@ public class Strings {
     // System.out.println(str1==str2);
 
 
+    
 
     }
 }

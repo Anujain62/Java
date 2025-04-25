@@ -121,22 +121,47 @@ public class Predict_Output {
 
 
 
-    loop1: 
-    for (int i = 0; i < 5; i++) 
-     { 
-        for (int j = 0; j < 5; j++)  
-        { 
-            if (i == 3) 
-                break loop1; 
-            System.out.println("i = " + i + " j = " + j); 
-        } 
-    } 
+    // loop1: 
+    // for (int i = 0; i < 5; i++) 
+    //  { 
+    //     for (int j = 0; j < 5; j++)  
+    //     { 
+    //         if (i == 3) 
+    //             break loop1; 
+    //         System.out.println("i = " + i + " j = " + j); 
+    //     } 
+    // } 
 
 
 
 
 
+    // for(int i=0;i<5;i++)
+    //   for(int j=0;j<5;j++)
+    //      System.out.println(i+" "+j);
+    //      System.out.println("hii");
 
+
+
+
+    // for(int i=0;i<5;i++)
+    //   for(int j=0;j<5;j++);
+    //     System.out.println("hii");
+
+
+
+    // int i=1;
+    // while(i++<=5){
+    //     if(i==3)
+    //        continue;
+    //     System.out.println(i+" ");
+    // }
+
+
+
+    // int a=5;
+    // int b=a++ + ++a;
+    // System.out.println(b);
 
 
 
