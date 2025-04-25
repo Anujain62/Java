@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Find_Missing_Num {
+ public static void main(String[] args) {
+
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter size of array:");
+  int size=sc.nextInt();
+  int[] arr=new int[size];
+
+  System.out.println("Enter elements of array:");
+  for(int i=0;i<size;i++){
+   arr[i]=sc.nextInt();
+  }
+   
+  
+
+  int sum=0;
+  int tsum=(size*(size+1))/2;
+  for(int i=0;i<size;i++)
+   { sum+=arr[i];}
+ 
+  int missing=sum-tsum;
+  System.out.println(tsum);
+  System.out.println(sum);
+  System.out.println("Missing numbet is "+missing);
+
+
+
+
+ }
+}
