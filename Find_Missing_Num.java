@@ -13,16 +13,15 @@ public class Find_Missing_Num {
    arr[i]=sc.nextInt();
   }
    
-  
-
   int sum=0;
-  int tsum=(size*(size+1))/2;
-  for(int i=0;i<size;i++)
-   { sum+=arr[i];}
+  int tsum=((size+1)*(size+2))/2;
+  for(int i=0;i<size;i++){
+    sum+=arr[i];
+   }
  
-  int missing=sum-tsum;
-  System.out.println(tsum);
-  System.out.println(sum);
+  int missing=tsum-sum;
+  // System.out.println(tsum);
+  // System.out.println(sum);
   System.out.println("Missing numbet is "+missing);
 
 
