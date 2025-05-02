@@ -165,11 +165,35 @@ public class Predict_Output {
 
 
 
+    // int a=10;
+    // System.out.println(a);
+    // changeA(a);
+    // System.out.println(a);
 
 
+
+    // int[] arr={10,20,30,40};
+    // System.out.println("Original array:");
+    // for(int i:arr)
+    //   System.out.println(i);
+    // changeArr(arr);
+    // System.out.println("After changing array:");
+    // for(int i:arr)
+    // System.out.println(i);
 
 
 
 
  }
+
+ public static void changeA(int a){
+    a=20;
+ }
+
+ public static void changeArr(int[] arr){
+    arr[0]=5;
+    arr[1]=8;
+ }
+
+
 }
