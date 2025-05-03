@@ -12,7 +12,7 @@
 // java collection wikipedia  -> link for hierarchy of collections
 
 
-// JDK 14 documentation -> API documentation   ->> for study of classes and packageses
+// (oracle) JDK 14 documentation -> API documentation   ->> for study of classes and packageses
 // if we not find anythink so we find inside the module java.Base
 
 
