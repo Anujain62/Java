@@ -4,6 +4,7 @@ class Cylinder{
     private int radius;
     private int height;
 
+    Cylinder(){};
     // setter method
     public void setRedius(int r){
         radius = r;

@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-class MyEmployee{
+class MyEmployee1{
     private int id;
     private String name;
 
     // default constructor
-    public MyEmployee(){
+    public MyEmployee1(){
         id=45;
         name ="anu jain";
     }
 
     // parameterized contructor
-    public MyEmployee(int i,String n){
+    public MyEmployee1(int i,String n){
         id=i;
         name =n;
     }
@@ -52,7 +52,7 @@ public class Constructor {
         System.out.println("Id :"+obj1.getId());
 
         // again new object creation and perameterized constructor
-        MyEmployee obj2=new MyEmployee(id,name);
+        MyEmployee1 obj2=new MyEmployee1(id,name);
         System.out.println("Parameterized constructor values :");
         System.out.println("Name :"+obj2.getName());
         System.out.println("Id :"+obj2.getId());

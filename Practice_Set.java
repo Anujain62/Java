@@ -36,7 +36,7 @@
 
 //  public static void main(String[] args) {
 
-//   Date d = new Date() ;    -> IT GIVES ERROR
+//   Date d = new Date() ;    //-> IT GIVES ERROR
 //   System.out.println(d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
 //  }
 // }
@@ -67,21 +67,20 @@
 
 // 4) Repeat question 2nd using java.time API
 
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
+// import java.time.LocalDateTime;
+// import java.time.format.DateTimeFormatter;
 
-public class Practice_Set {
+// public class Practice_Set {
 
- public static void main(String[] args) {
+//  public static void main(String[] args) {
 
-  LocalDateTime dt=LocalDateTime.now();
-  DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:MM:SS");
-  String time=dt.format(dtf);
-  System.out.println(time);
+//   LocalDateTime dt=LocalDateTime.now();
+//   DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:MM:SS");
+//   String time=dt.format(dtf);
+//   System.out.println(time);
 
- }
-}
+//  }
+// }
 
 
 
