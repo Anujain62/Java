@@ -11,6 +11,8 @@ public class Hash_Set {
   myHashSet2.add(3);
   myHashSet2.add(11);
   myHashSet2.add(21);
+  for(int e:myHashSet2)
+    System.out.println(e);
 
  }
 }

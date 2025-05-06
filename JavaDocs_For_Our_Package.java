@@ -9,7 +9,7 @@
 
 // HOW TO WIRTE JAVA DOCS
 //package com.company;
-///**
+//**
 // *  This class is to demonstrate what javadoc is and hot it is used in the java industry
 // *  This is <i>italic</i> word<p>this is a new paragraph</p>
 //* @author Harry (CodeWithHarry)
@@ -55,6 +55,7 @@ public  class JavaDocs_For_Our_Package{
  */
 
  public static void main(String[] args) {
+
   System.out.println("I am main method");
  }
 
@@ -66,7 +67,7 @@ public  class JavaDocs_For_Our_Package{
   * @throws Exception if i is 0
   * @deprecated This method is deprecated please use + operator
  */
- public  int add(int i,int j) throws Exception{
+ public static int add(int i,int j) throws Exception{
   if(i==0)
     throw new Exception();
   int c;

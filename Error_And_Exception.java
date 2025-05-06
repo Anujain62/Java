@@ -3,7 +3,7 @@
 // public class Error_And_Exception {
 //  public static void main(String[] args) {
 
-//   // syntax error -> when compiler finds something wrong with our program , it rhrow a syntax error
+//   // syntax error -> when compiler finds something wrong with our program , it throw a syntax error
 
 
 //   // logical error -> A logical error or a bug occurs when a program compiles and runs but does the wrong thing

@@ -9,10 +9,10 @@ import java.util.Scanner;
 
 class NegativeRadiusException extends Exception{
  public String toString(){
-  return "Radius can not be negative!";
+  return "Radius can not be negative! to string";
  }
  public String getMessage(){
-  return "Radius can not be negative!";
+  return "Radius can not be negative! to getmessage";
  }
 }
 

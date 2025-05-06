@@ -1,4 +1,3 @@
-package mypackage;
 
 class One{
     public void greet(){

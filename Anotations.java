@@ -1,4 +1,3 @@
-import mypackage;
 
 class BaseClass extends One{       // it extends class of dynamic_method_dispatch file
  @Override

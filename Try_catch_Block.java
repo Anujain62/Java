@@ -9,7 +9,7 @@ public class Try_catch_Block {
  public static void main(String[] args) {
   int a=600;
   int b=0;
-  int c=0;
+  int c;
 
   // Without try
 
@@ -20,13 +20,13 @@ public class Try_catch_Block {
 
   // With try
 
-  // try{
-  //  c=a/b;
-  // }
-  // catch(Exception e){
-  //  System.out.println("We failed to divide. Reason: ");
-  //  System.out.println(e);
-  // }
+  try{
+   c=a/b;
+  }
+  catch(Exception e){
+   System.out.println("We failed to divide. Reason: ");
+   System.out.println(e);
+  }
   System.out.println("End of the program");
 
   

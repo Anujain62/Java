@@ -46,7 +46,7 @@ public class Predict_Output {
 
 
    // int x=2;
-   // switch(x+2){
+   // switch(x+2){      // switch case can be contains expression
    //  case 3:
    //     System.out.println("hello");
    //     break;
@@ -110,43 +110,43 @@ public class Predict_Output {
 
 
 
-/* 
+
     // the line below this gives an output 
-    // \u000d //System.out.println("comment executed"); 
+    //\u000d  //System.out.println("comment executed"); 
     
-    //The reason for this is that the Java compiler parses the unicode character \u000d as a new line and gets transformed into:
-*/
+    //The reason for this is that the Java compiler parses the unicode character \u000d // as a new line and gets transformed into:
 
 
 
 
 
-    // loop1: 
-    // for (int i = 0; i < 5; i++) 
-    //  { 
-    //     for (int j = 0; j < 5; j++)  
-    //     { 
-    //         if (i == 3) 
-    //             break loop1; 
-    //         System.out.println("i = " + i + " j = " + j); 
-    //     } 
-    // } 
+   //  loop1: 
+   //  for (int i = 0; i < 5; i++) 
+   //   { 
+   //      for (int j = 0; j < 5; j++)  
+   //      { 
+   //          if (i == 3) 
+   //             //break;
+   //             break loop1;
+   //          System.out.println("i = " + i + " j = " + j); 
+   //      } 
+   //  } 
 
 
 
 
 
-    // for(int i=0;i<5;i++)
-    //   for(int j=0;j<5;j++)
-    //      System.out.println(i+" "+j);
-    //      System.out.println("hii");
+   //  for(int i=0;i<5;i++)
+   //    for(int j=0;j<5;j++)
+   //       System.out.println(i+" "+j);
+   //       System.out.println("hii");
 
 
 
 
-    // for(int i=0;i<5;i++)
-    //   for(int j=0;j<5;j++);
-    //     System.out.println("hii");
+   //  for(int i=0;i<5;i++)
+   //    for(int j=0;j<5;j++);
+   //      System.out.println("hii");
 
 
 
