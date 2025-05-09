@@ -29,17 +29,17 @@
 
 // 2) Use the date class in java to print in the following format -> 21:47:02
 
-// import java.sql.Date;
-// import java.util.*;
 
-// public class Practice_Set {
+import java.util.Date;
 
-//  public static void main(String[] args) {
+public class Practice_Set {
 
-//   Date d = new Date() ;    //-> IT GIVES ERROR
-//   System.out.println(d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
-//  }
-// }
+ public static void main(String[] args) {
+
+  Date d = new Date() ;    //-> IT GIVES ERROR
+  System.out.println(d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+ }
+}
 
 
 

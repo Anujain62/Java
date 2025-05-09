@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Linked_List {
  public static void main(String[] args) {
-  ArrayList<Integer> l1=new ArrayList();
+  ArrayList<Integer> l1=new ArrayList<>();
   ArrayList<Integer> l2=new ArrayList<>();
 
   l2.add(10);

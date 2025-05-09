@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Set_Matrix_Zeros {
  public static void main(String[] args) {
+
   Scanner sc=new Scanner(System.in);
   System.out.println("Enter row of matrix:");
   int row=sc.nextInt();
