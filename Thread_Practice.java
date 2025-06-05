@@ -184,37 +184,38 @@
 // 6) Amount withdraw
 // problem -> unwanted withdraw
 
-class Amount implements Runnable{
- static int amount = 1000;
- int tempAmt;
- Amount(int tempAmt){
-  this.tempAmt = tempAmt;
- }
- public void run(){
-  if(tempAmt>amount){
-  System.out.println("Insufficient amount for withdraw request "+tempAmt);
-  }
-  else{
-   System.out.println("Withdraw amount "+tempAmt);
-   amount-=tempAmt;
-   System.out.println("Remaining amount "+amount);
-  }
- }
-}
-public class Thread_Practice {
+// class Amount implements Runnable{
+//  static int amount = 1000;
+//  int tempAmt;
+//  Amount(int tempAmt){
+//   this.tempAmt = tempAmt;
+//  }
+//  public void run(){
+//   if(tempAmt>amount){
+//   System.out.println("Insufficient amount for withdraw request "+tempAmt);
+//   }
+//   else{
+//    System.out.println("Withdraw amount "+tempAmt);
+//    amount-=tempAmt;
+//    System.out.println("Remaining amount "+amount);
+//   }
+//  }
+// }
+// public class Thread_Practice {
 
- public static void main(String[] args) {
-  Amount t1 = new Amount(800);
-  Thread x= new Thread(t1);
-  Amount t2 = new Amount(500);
-  Thread y= new Thread(t2);
-  x.start();
-  y.start();
- }
-}
+//  public static void main(String[] args) {
+//   Amount t1 = new Amount(800);
+//   Thread x= new Thread(t1);
+//   Amount t2 = new Amount(500);
+//   Thread y= new Thread(t2);
+//   x.start();
+//   y.start();
+//  }
+// }
 
 
 // solution for unwanted withdraw
+// 1)
 
 // class Amount implements Runnable{
 //  static int amount = 1000;
@@ -248,3 +249,82 @@ public class Thread_Practice {
 //  }
 // }
 
+//2)
+class Bank {
+ private int balance = 1000;
+ private boolean isWithdrawInProgress = false;
+
+ public synchronized void withdraw(String name, int amount) {
+ System.out.println(name + " wants to withdraw ₹" + amount);
+
+ while (isWithdrawInProgress) {
+ try {
+ System.out.println(name + " is waiting as another withdrawal is in progress...");
+ wait();
+ } catch (InterruptedException e) {
+ e.printStackTrace();
+ }
+ }
+
+ isWithdrawInProgress = true;
+ if (balance >= amount) {
+ System.out.println(name + " is withdrawing ₹" + amount);
+ balance -= amount;
+ try {
+ Thread.sleep(2000);
+ } catch (InterruptedException e) {
+ e.printStackTrace();
+ }
+ System.out.println(name + " completed withdrawal. Remaining balance: ₹" + balance);
+ } else {
+ System.out.println("Not enough balance for " + name);
+ }
+
+ isWithdrawInProgress = false;
+ notify();
+ }
+}
+
+public class Thread_Practice {
+
+  public static void main(String[] args) {
+ Bank bank = new Bank();
+
+ Thread t1 = new Thread(() -> {
+ bank.withdraw("Thread-1", 600);
+ });
+
+ Thread t2 = new Thread(() -> {
+ bank.withdraw("Thread-2", 700);
+ });
+
+ t1.start();
+ t2.start();
+ }
+}
+
+
+
+
+// Sort form of threads (creation of thread with creating extra class)
+
+// public class Thread_Practice {
+
+//  public static void main(String[] args) {
+//   Thread t1 = new Thread(() -> {
+//    System.out.println("Hello");
+//    try{
+//     Thread.sleep(2000);
+//    }
+//    catch(InterruptedException ex){
+
+//    }
+//    System.out.println("Last");
+//   });
+//   Thread t2 = new Thread(()->{
+//    System.out.println("Hiii");
+//   });
+//   t1.start();
+//   t2.start();
+//  }
+// }
