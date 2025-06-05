@@ -1,7 +1,7 @@
-// a collection represents a group of object. java collections provide classws and interfaces for us to be 
+// a collection represents a group of object. java collections provide classes and interfaces for us to be 
 // able to write code quickly and efficiently
 
-// why do we nned collections :  we need collection for efficient storage and better manipulation of data in java
+// why do we need collections :  we need collection for efficient storage and better manipulation of data in java
 
 // how are collections available : collections in java are available as classes and interfaces. following are few commonly used collections in java:
 // 1) ArrayList  2) Set -> for distinct collection  3) stack -> LIFO  4) HashMap -> for storing key-value pairs 

@@ -3,7 +3,7 @@
 // class MyThread1 extends Thread{
 //  int i=0;
 //  public void run(){
-//   while (i<50) {
+//   while (i<15) {
 //    System.out.println("Good Morning");
 //    i++;
 //   }
@@ -13,7 +13,7 @@
 // class MyThread2 extends Thread{
 //  int i=0;
 //  public void run(){
-//   while (i<50) {
+//   while (i<15) {
 //    System.out.println("Wel Come");
 //    i++;
 //   }
@@ -148,38 +148,103 @@
 
 // 5) how do you get reference to the current thread in java
 
-class MyThread1 extends Thread{
- int i=0;
+// class MyThread1 extends Thread{
+//  int i=0;
+//  public void run(){
+//   while (i<50) {
+//    System.out.println("Good Morning");
+//    i++;
+//   }
+//  }
+// }
+
+// class MyThread2 extends Thread{
+//  int i=0;
+//  public void run(){
+//   while (i<50) {
+//    System.out.println("Wel Come");
+//    i++;
+//   }
+//  }
+// }
+
+// public class Thread_Practice {
+//  public static void main(String[] args) {
+//   MyThread1 t1=new MyThread1();
+//   MyThread2 t2=new MyThread2();
+//   System.out.println("before starting Reference of t1 "+Thread.currentThread().getState());
+//   t1.start();
+//   t2.start();
+//   System.out.println("after starting Reference of t2 "+Thread.currentThread().getState());
+//  }
+// }
+
+
+
+// 6) Amount withdraw
+// problem -> unwanted withdraw
+
+class Amount implements Runnable{
+ static int amount = 1000;
+ int tempAmt;
+ Amount(int tempAmt){
+  this.tempAmt = tempAmt;
+ }
  public void run(){
-  while (i<50) {
-   System.out.println("Good Morning");
-   i++;
+  if(tempAmt>amount){
+  System.out.println("Insufficient amount for withdraw request "+tempAmt);
+  }
+  else{
+   System.out.println("Withdraw amount "+tempAmt);
+   amount-=tempAmt;
+   System.out.println("Remaining amount "+amount);
   }
  }
 }
-
-class MyThread2 extends Thread{
- int i=0;
- public void run(){
-  while (i<50) {
-   System.out.println("Wel Come");
-   i++;
-  }
- }
-}
-
 public class Thread_Practice {
+
  public static void main(String[] args) {
-  MyThread1 t1=new MyThread1();
-  MyThread2 t2=new MyThread2();
-  System.out.println("before starting Reference of t1 "+Thread.currentThread().getState());
-  t1.start();
-  t2.start();
-  System.out.println("after starting Reference of t2 "+Thread.currentThread().getState());
+  Amount t1 = new Amount(800);
+  Thread x= new Thread(t1);
+  Amount t2 = new Amount(500);
+  Thread y= new Thread(t2);
+  x.start();
+  y.start();
  }
 }
 
 
+// solution for unwanted withdraw
 
+// class Amount implements Runnable{
+//  static int amount = 1000;
+//  int tempAmt;
+//  Amount(int tempAmt){
+//   this.tempAmt = tempAmt;
+//  }
+//  public void run(){
+//   synchronized(Amount.class){
+//    if(tempAmt>amount){
+//     System.out.println("Insufficient amount for withdraw request "+tempAmt);
+//    }
+//    else{
+//     System.out.println(Thread.currentThread().getName());
+//     System.out.println("Withdraw amount "+tempAmt);
+//     amount-=tempAmt;
+//     System.out.println("Remaining amount "+amount);
+//    }
+//   }
+//  }
+// }
+// public class Thread_Practice {
 
+//  public static void main(String[] args) {
+//   Amount t1 = new Amount(800);
+//   Thread x= new Thread(t1);
+//   Amount t2 = new Amount(500);
+//   Thread y= new Thread(t2);
+//   x.start();
+//   y.start();
+//  }
+// }
 

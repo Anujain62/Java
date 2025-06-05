@@ -12,7 +12,6 @@ class MyThread1 extends Thread{
   int i=0;
   while(i<5){
    System.out.println("My thread is running");
-   System.out.println("I'm happy!");
    i++;
   }
  } 
@@ -24,7 +23,6 @@ class MyThread2 extends Thread{
   int i=0;
   while(i<5){
    System.out.println("Thread 2 is good");
-   System.out.println("i am sad!");
    i++;
   }
  }

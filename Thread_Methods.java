@@ -33,7 +33,7 @@ public class Thread_Methods {
   MyThread1 t1=new MyThread1();
   MyThread2 t2=new MyThread2();
   t1.start();
-  // if we want first finish the t1 and than start t2 so we use this method
+  // if we want first finish the t1 and than start other methods of main function
 
   try{
    t1.join();
