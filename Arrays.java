@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class Arrays {
@@ -46,5 +47,10 @@ public class Arrays {
         for(int i=0;i<size;i++)
             System.out.print(arr[i]+" ");
 
+    }
+
+    public static List<Integer> asList(int i, int j, int k, int l, int m) {
+     // TODO Auto-generated method stub
+     throw new UnsupportedOperationException("Unimplemented method 'asList'");
     }
 }
