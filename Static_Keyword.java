@@ -35,7 +35,7 @@ public class Static_Keyword {
 
   Name n1 = new Name("Anu");
   Name n2 = new Name("Anki");   
-  System.out.println(n1.name);           // here both are prints same output (last change value), because it is depends on the object
-  System.out.println(n2.name);
+  System.out.println(Name.name);           // here both are prints same output (last change value), because it is depends on the object
+  System.out.println(Name.name);
  }
 }

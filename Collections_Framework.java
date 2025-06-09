@@ -16,9 +16,6 @@
 // if we not find anythink so we find inside the module java.Base
 
 
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.TreeSet;
 
 
 public class Collections_Framework {
