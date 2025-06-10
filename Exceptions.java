@@ -25,6 +25,8 @@
 
 
 
+
+
 // creation of our exceptions and throw this exception
 // class NavinException extends Exception{
 //  public NavinException(String string){
@@ -59,7 +61,7 @@
 
 
 
-class A{
+// class A{
 
  // public void show(){
  //  try{
@@ -73,30 +75,30 @@ class A{
 
 
 
- 
+
  // if we don't handled exceptions, so we use throws
- public void show() throws ClassNotFoundException{
-  // Class.forName("Exceptions");
-  Class.forName("Hello");
- }
+//  public void show() throws ClassNotFoundException{
+//   // Class.forName("Exceptions");
+//   Class.forName("Hello");
+//  }
 
-}
-public class Exceptions {
+// }
+// public class Exceptions {
 
- static{
-  System.out.println("Class Loaded");
- }
- public static void main(String[] args) throws Exception{
+//  static{
+//   System.out.println("Class Loaded");
+//  }
+//  public static void main(String[] args) throws Exception{
   
- // A obj = new A();
- // obj.show();
- A obj = new A();
- try{
-  obj.show();
- }
- catch(ClassNotFoundException e){
-  e.printStackTrace();
- }
+//  // A obj = new A();
+//  // obj.show();
+//  A obj = new A();
+//  try{
+//   obj.show();
+//  }
+//  catch(ClassNotFoundException e){
+//   e.printStackTrace();
+//  }
 
- }
-}
+//  }
+// }

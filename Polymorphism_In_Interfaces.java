@@ -54,7 +54,7 @@ class MySmartPhone extends MyCellPhone implements MyWifi , MyCamera{
 public class Polymorphism_In_Interfaces {
  public static void main(String[] args) {
   
-  MyCamera cam=new MySmartPhone();  // this is a smartphone but, use it as a camera
+  //MyCamera cam=new MySmartPhone();  // this is a smartphone but, use it as a camera
 
   // cam.getNetworks();    // not allowed because smartphone use like camera so we can not access wifi
   //cam.sampleMeth();

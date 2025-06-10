@@ -38,6 +38,7 @@ public class Getter_And_Setter_For_Circle_Area_And_Perimeter {
         Circle c=new Circle();
         c.setRedius(r);
         int x=c.setArea(area);
+        sc.close();
 
         float corrArea=c.getArea();
         if(x==1)
@@ -59,4 +60,3 @@ public class Getter_And_Setter_For_Circle_Area_And_Perimeter {
 
 
 
-// use of this keyword
